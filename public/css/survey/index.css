@@ -1,0 +1,11 @@
+.max-width-640px {
+    max-width: 640px;
+}
+
+body {
+    background: var(--dark-bg-filter), url("../../imgs/survey-bg.jpg");
+}
+
+.background-fixed {
+    background-attachment: fixed;
+}

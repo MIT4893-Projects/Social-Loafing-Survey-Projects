@@ -1,0 +1,25 @@
+:root {
+    --dark-bg-filter: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.top-right-background {
+    background-size: cover;
+    background-position: top right;
+}
+
+.center-background {
+    background-size: cover;
+    background-position: center;
+}
+
+.rounded-1_5rem {
+    border-radius: 1.5rem;
+}
+
+#top-view {
+    background-image: var(--dark-bg-filter), url("../imgs/bg-top.webp");
+}
+
+#about-social-loafing {
+    background-image: var(--dark-bg-filter), url("../imgs/about-social-loafing.jpg")
+}
