@@ -8,8 +8,8 @@
 }
 
 .center-background {
-    background-size: cover;
-    background-position: center;
+    background-size: cover !important;
+    background-position: center !important;
 }
 
 .rounded-1_5rem {

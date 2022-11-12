@@ -1,3 +1,14 @@
+function answeredQuestion(id) {
+    var choices = document.getElementById(id + "-body").children[1].children;
+    for (choice of choices) {
+        if (choice.checked) {
+            console.log(true);
+            return true;
+        }
+    }
+    return false;
+}
+
 function createElementWithClasses(elem, classes, innerText) {
     var elem_ = document.createElement(elem);
 
@@ -16,8 +27,10 @@ function createElementWithClasses(elem, classes, innerText) {
 function createSurveyQuestion(question_form) {
     var card_element = createElementWithClasses("div", "card h-100 rounded-1_5rem shadow-lg my-3");
     card_element.appendChild(createElementWithClasses("div", "card-header"))
+    card_element.id = question_form.name;
 
     var card_body = createElementWithClasses("div", "card-body pt-1");
+    card_body.id = question_form.name + "-body";
     card_element.appendChild(card_body);
 
     var question_node = createElementWithClasses("h5", "", question_form.question_prefix + question_form.question);
@@ -38,7 +51,9 @@ function createSurveyQuestion(question_form) {
             radio_elem.name = question_form.name;
             radio_elem.id = question_form.name + choice;
 
-            radio_elem.addEventListener("click", function () { changeOtherChoiceRadioInputState(question_form.name + "-other-choice", true) });
+            if (question_form.other_choice) {
+                radio_elem.addEventListener("click", function () { changeOtherChoiceRadioInputState(question_form.name + "-other-choice", true) });
+            }
 
             var radio_label = createElementWithClasses("label", "form-check-label", choice);
             radio_label.htmlFor = question_form.name + choice;
