@@ -1,8 +1,30 @@
-function answeredQuestion(id) {
-    var choices = document.getElementById(id + "-body").children[1].children;
-    for (choice of choices) {
-        if (choice.checked) {
-            console.log(true);
+function submit() {
+    console.log(checkAllQuestion());
+    if (checkAllQuestion()) {
+        window.location = "/survey/submitted";
+    }
+}
+
+function checkAllQuestion() {
+    var question_choices = document.querySelectorAll(`[id^="Q"][id$="-body"]`);
+    for (question of question_choices) {
+        if (!answeredQuestion(question)) {
+            if (!document.getElementById("warning")) {
+                var warning_div = createElementWithClasses("p", "text-danger bg-white rounded-pill text-center py-2");
+                warning_div.id = "warning";
+                warning_div.innerText = "Bạn chưa trả lời toàn bộ câu hỏi khảo sát";
+                document.getElementById("survey-form").appendChild(warning_div);
+            }
+            return false;
+        }
+    }
+    return true;
+}
+
+function answeredQuestion(element) {
+    var choices = element.children[1].children;
+    for (c of choices) {
+        if (c.children[0].checked) {
             return true;
         }
     }

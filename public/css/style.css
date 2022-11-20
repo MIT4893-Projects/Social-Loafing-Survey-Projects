@@ -1,5 +1,5 @@
 :root {
-    --dark-bg-filter: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    --dark-bg-filter: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .top-right-background {
