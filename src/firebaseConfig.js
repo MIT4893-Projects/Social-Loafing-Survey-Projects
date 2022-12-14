@@ -1,1 +1,0 @@
-import { initalizeApp } from "firebase/app";
