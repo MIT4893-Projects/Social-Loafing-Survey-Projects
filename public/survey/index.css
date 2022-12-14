@@ -3,7 +3,7 @@
 }
 
 body {
-    background: var(--dark-bg-filter), url("../../imgs/survey-bg.jpg");
+    background: var(--dark-bg-filter), url("./../imgs/survey-bg.jpg");
 }
 
 .background-fixed {

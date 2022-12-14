@@ -2,13 +2,15 @@
     --dark-bg-filter: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
+.top-right-background .center-background {
+    background-size: cover !important;
+}
+
 .top-right-background {
-    background-size: cover;
-    background-position: top right;
+    background-position: top right !important;
 }
 
 .center-background {
-    background-size: cover !important;
     background-position: center !important;
 }
 
@@ -17,9 +19,9 @@
 }
 
 #top-view {
-    background-image: var(--dark-bg-filter), url("../imgs/bg-top.webp");
+    background-image: var(--dark-bg-filter), url("imgs/bg-top.webp");
 }
 
 #about-social-loafing {
-    background-image: var(--dark-bg-filter), url("../imgs/about-social-loafing.jpg")
+    background-image: var(--dark-bg-filter), url("imgs/about-social-loafing.jpg")
 }
