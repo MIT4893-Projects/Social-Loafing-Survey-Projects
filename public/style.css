@@ -2,7 +2,7 @@
     --dark-bg-filter: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.top-right-background .center-background {
+.top-right-background, .center-background {
     background-size: cover !important;
 }
 
