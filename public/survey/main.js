@@ -201,11 +201,10 @@ var json_data = JSON.parse(
             "name": "Q5",
             "choices": [
                 "Có, mình hiểu rất rõ.",
-                "Có, nhưng có vài chỗ mình không biết.",
-                "Xin lỗi, mình chỉ vừa mới được biết sơ qua về hiện tượng này qua đường link được đính kèm trong form.",
+                "Có, nhưng có vài chỗ mình không rõ.",
                 "Mục khác:"
             ],
-            "other_choice": 3,
+            "other_choice": 2,
             "require": true
         },
         {
@@ -217,7 +216,7 @@ var json_data = JSON.parse(
                 "Mạng xã hội (Facebook, Instagram,...).",
                 "Qua sách vở, tuyên truyền,...",
                 "Được bạn bè phổ cập đến.",
-                "Mình vừa mới được biết về hiện tượng này qua đường link được đính kèm trong form.",
+                "Mình vừa mới được biết về hiện tượng này.",
                 "Mục khác:"
             ],
             "other_choice": 4,
@@ -267,16 +266,17 @@ var json_data = JSON.parse(
         },
         {
             "question_prefix": "Câu 10: ",
-            "question": "Nếu bạn gặp một người bị ảnh hưởng bởi 'Social loafing' (lười biếng xã hội) thì bạn sẽ:",
-            "type": "multiple-choices",
+            "question": "Theo bạn, trong những hành vi sau đây, hành vi nào thể hiện thực trạng “Social loafing” rõ nhất?",
+            "type": "single-choice",
             "name": "Q10",
             "choices": [
-                "Góp ý với người đó.",
-                "Làm lơ, không quan tâm và coi như không biết.",
-                "Báo cáo với giáo viên để xử lý thành viên ấy.",
+                "Một hoặc một số thành viên của một nhóm lười biếng và không chịu hoàn thành công việc được giao.",
+                "Một hoặc một số thành viên thể hiện sự chán nản khi làm việc nhóm, nhưng vẫn hoàn thành công việc được giao.",
+                "Một hoặc một số thành viên đùn đẩy công việc cho người khác.",
+                "Tất cả các lựa chọn trên.",
                 "Mục khác:"
             ],
-            "other_choice": 3,
+            "other_choice": 4,
             "require": true
         },
         {
