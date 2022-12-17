@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="vi">
 
 <head>
@@ -11,9 +11,7 @@
 
     <link rel="icon" href="imgs/icon.png" type="image-x/icon">
     <title>SocLoafing | Trang chủ</title>
-    <script>function scrollInto(id) {
-            document.getElementById(id).scrollIntoView();
-        }</script>
+    <script>function scrollInto(id) { document.getElementById(id).scrollIntoView(); }</script>
 </head>
 
 <body>
@@ -22,7 +20,7 @@
             <div class="min-vh-100 d-flex align-items-center justify-content-center overflow-auto text-light mx-3">
                 <div class="container-fluid gx-md-5 overflow-auto top-0 py-5 py-sm-none" style="max-width: 1320px;">
                     <div class="row align-items-center justify-content-around">
-                        <div class="col-12 col-sm-6 col-lg-5">
+                        <div class="col-12 col-sm-5 col-lg-5">
                             <h1 class="display-1">
                                 Social Loafing
                             </h1>
@@ -32,21 +30,26 @@
                                 hiện tượng này.
                             </p>
                         </div>
-                        <div class="col-12 col-sm-6 col-lg-4">
+                        <div class="col-12 col-sm-7 col-lg-4">
                             <div class="card bg-dark rounded-1_5rem shadow">
                                 <div class="card-body">
-                                    Chúng tôi tạo trang web này với mong muốn giảm bớt thực trạng “Social loafing”,
-                                    giúp đỡ các bạn học sinh thoát khỏi hiện tượng này và hiểu rõ hơn về “Social
-                                    loafing”.
+                                    Chúng tôi tạo trang web này với mong muốn giúp các bạn học sinh hiểu rõ hơn về
+                                    “Social loafing”, từ đó hạn chế hiện trạng này, đồng thời giúp các bạn học sinh
+                                    thoát khỏi “Social loafing” khi cảm thấy bản thân bị mắc phải.
                                 </div>
                                 <button class="btn btn-secondary rounded-1_5rem mx-1"
                                     onclick="scrollInto('about-social-loafing')">
                                     Tìm hiểu về Social loafing
                                 </button>
                                 <p class="text-center my-1">hoặc</p>
-                                <a class="btn btn-secondary rounded-1_5rem mx-1 mb-1" href="survey/">
+                                <a class="btn btn-secondary rounded-1_5rem mx-1" href="survey/">
                                     Bắt đầu thực hiện khảo sát
                                 </a>
+                                <hr class="my-2">
+                                <button class="btn btn-secondary rounded-1_5rem mx-1 mb-1"
+                                    onclick="scrollInto('support')">
+                                    Hỗ trợ khi bạn mắc phải “Social loafing”
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -55,12 +58,12 @@
         </section>
         <section class="top-right-background" id="about-social-loafing">
             <div class="py-5 px-3 px-sm-5 min-vh-100 d-flex flex-column justify-content-center align-items-center">
-                <h2 class="display-2 text-light mb-4 shadow-lg">
+                <h2 class="display-2 text-light mb-4">
                     Tìm hiểu về Social loafing
                 </h2>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-xl-4 mb-5 mb-md-4 mb-xl-0">
+                        <div class="col-12 col-md-6 col-xl-4 mb-3 mb-md-4 mb-xl-0">
                             <div class="card h-100 rounded-1_5rem">
                                 <div class="card-header py-3">
                                     <h5 class="card-title">“Social loafing” là gì?</h5>
@@ -85,7 +88,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-xl-4 mb-5 mb-md-4 mb-xl-0">
+                        <div class="col-12 col-md-6 col-xl-4 mb-3 mb-md-4 mb-xl-0">
                             <div class="card h-100 rounded-1_5rem shadow-lg">
                                 <div class="card-header py-3">
                                     <h5 class="card-title">Lười biếng xã hội được phát hiện từ bao giờ?</h5>
@@ -111,7 +114,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-xl-4 mb-5 mb-md-4 mb-xl-0">
+                        <div class="col-12 col-xl-4 mb-3 mb-md-4 mb-xl-0">
                             <div class="card h-100 rounded-1_5rem shadow-lg">
                                 <div class="card-header py-3">
                                     <h5 class="card-title">Vì sao “Lười biếng xã hội” lại xảy ra?</h5>
@@ -125,18 +128,70 @@
                                             Hai nhà tâm lý học Simms và Nichols đã đề ra một cách giải thích hợp lý về
                                             các lý do chính hình thành lười biếng xã hội:
                                         </p>
-                                        <ul class="list-group list-group-fluid rounded-1_5rem shadow">
+                                        <ul class="list-group list-group-fluid rounded-1_5rem shadow-lg border">
                                             <li class="list-group-item">Thiếu động lực.</li>
                                             <li class="list-group-item">Đề cao năng suất người khác.</li>
-                                            <li class="list-group-item">Phân hóa trách nhiệm.</li>
                                             <li class="list-group-item">Quy mô nhóm.</li>
-                                            <li class="list-group-item">Thuyết tiềm năng đánh giá.</li>
+                                            <li class="list-group-item">Phân hóa trách nhiệm. (Các thành viên cảm thấy
+                                                có ít trách nhiệm cá nhân hơn khi công việc được chia đều trong một
+                                                nhóm, vì cho rằng công sức bỏ ra sẽ không gây nhiều ảnh hưởng lên tập
+                                                thể.)</li>
+                                            <li class="list-group-item">Thuyết tiềm năng đánh giá. (Vì kết quả được đánh
+                                                giá dựa trên tập thể thay vì cá nhân, thành viên bị “chìm vào nhóm”. Họ
+                                                cảm thấy năng lực bỏ ra không được ghi nhận độc lập hoặc không được tán
+                                                thưởng công bằng so với người khác.)</li>
                                         </ul>
                                         <br>
                                         <footer class="blockquote-footer">Nguồn: <a class="text-reset"
                                                 href="https://vietcetera.vn/vn/luoi-bieng-xa-hoi-tam-ly-y-lai-khi-lam-viec-nhom">Vietcetera</a>
                                         </footer>
                                     </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="center-background" id="support">
+            <div class="d-flex justify-content-center py-5 px-3 px-sm-5 flex-column">
+                <h5 class="display-5 text-light mb-5">
+                    Bạn cảm thấy bản thân đang mắc phải “Social loafing”? Đừng lo vì sau đây là một vài cách có thể giúp bạn thoát
+                    khỏi hiện tượng này.
+                </h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="card rounded-1_5rem">
+                                <div class="card-header py-3">
+                                    <h5 class="my-0">Bạn cần phải xác định lý do khiến bản thân mắc phải “Social
+                                        loafing”.</h5>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-group shadow-lg rounded-1_5rem">
+                                        <li class="list-group-item bg-dark text-light">
+                                            <h5 class="my-2">Nếu nó đến từ bản thân bạn như</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5 class="my-0">Bạn cảm thấy quá lười biếng để làm công việc nhóm:</h5>
+                                            <p class="my-0">Bạn nên tự tạo cho bản thân một động lực để chăm chỉ hơn. Nó
+                                                có thể là đạt điểm tốt, hoặc thảo luận với các thành viên khác và thống
+                                                nhất các phần thưởng hiện vật phù hợp.</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5 class="my-0">Bạn không thích làm việc nhóm</h5>
+                                            <p class="my-0">Bạn nên tìm hiểu về các lợi ích của làm việc nhóm. Làm việc
+                                                nhóm giúp chúng ta tăng kỹ năng hợp tác và xã hội, đó sẽ là nền móng
+                                                vững chắc cho tương lai về sau. Nếu cảm thấy khó khăn, đừng ngần ngại
+                                                tìm sự giúp đỡ từ các thành viên còn lại hoặc giáo viên!</p>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5 class="my-0">Bạn cảm thấy mình bị đánh giá thấp so với các thành viên
+                                                còn lại</h5>
+                                            <p class="my-0">Với trường hợp này, bạn nên có một cuộc thảo luận với nhóm
+                                                trưởng và yêu cầu được đối xử công bằng hơn. Nếu mọi chuyện không cải
+                                                thiện, bạn có thể báo cáo cho giáo viên hoặc xin đổi nhóm.</p>
+                                        </li>
                                 </div>
                             </div>
                         </div>
@@ -160,12 +215,10 @@
                         <h5 class="col">Thành viên nhóm nghiên cứu</h5>
                     </div>
                     <div class="row">
-                        <div class="col-4">Thái Ngọc Trân</div>
-                        <div class="col-8">Lớp 9A1 - Trường Trung học cơ sở Lê Quý Đôn</div>
+                        <div class="col">Thái Ngọc Trân</div>
                     </div>
                     <div class="row">
-                        <div class="col-4">Lý Thái Ni</div>
-                        <div class="col-8">Lớp 9A1 - Trường Trung học cơ sở Lê Quý Đôn</div>
+                        <div class="col">Lý Thái Ni</div>
                     </div>
                     <hr>
                 </div>
@@ -176,11 +229,8 @@
                         </h5>
                     </div>
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col">
                             Vũ Thanh Phượng
-                        </div>
-                        <div class="col-8">
-                            Giáo viên - Trường Trung học cơ sở Lê Quý Đôn
                         </div>
                     </div>
                     <hr>

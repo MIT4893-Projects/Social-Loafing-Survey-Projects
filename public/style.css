@@ -23,5 +23,9 @@
 }
 
 #about-social-loafing {
-    background-image: var(--dark-bg-filter), url("imgs/about-social-loafing.jpg")
+    background-image: var(--dark-bg-filter), url("imgs/about-social-loafing.jpg");
+}
+
+#support {
+    background-image: var(--dark-bg-filter), url("imgs/support-bg.jpg");
 }
